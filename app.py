@@ -20,9 +20,6 @@ if st.button("Start Recording"):
             text = recognizer.recognize_google(audio)
             st.write("You said:", text)
             
-            # Optionally, here you could add code to match text with menu items
-            # or save the order for further processing
-
         except sr.UnknownValueError:
             st.write("Sorry, I could not understand the audio.")
         except sr.RequestError:
